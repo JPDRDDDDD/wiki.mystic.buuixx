@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki - Mystic Buuixx</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1️⃣ TOPO DO SITE (HEADER) -->
+    <header class="site-header">
+        <div class="header-left">
+            <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="#" class="logo">
+                <img src="img/mystic-logo.png" alt="Mystic Buuixx Logo">
+                <span>Mystic Buuixx</span>
+            </a>
+        </div>
+
+        <div class="header-right">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Busca..." class="search-input" id="globalSearch">
+                <span class="shortcut-key">Ctrl K</span>
+            </div>
+
+            <nav class="nav-buttons">
+                <a href="https://discord.gg/kYYxnv6mft" target="_blank" class="nav-btn">Discord</a>
+                <a href="http://localhost/loja" target="_blank" class="nav-btn primary" title="Acessar a loja">Loja</a>
+                <a href="https://mysticbuuixx.keepo.bio" target="_blank" class="nav-btn" title="Redes Sociais"><i class="fas fa-share-alt"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2️⃣ MENU LATERAL (SIDEBAR) -->
+    <aside class="site-sidebar">
+        <!-- CATEGORIA: INÍCIO -->
+        <div class="sidebar-group">
+            <div class="sidebar-title">Início</div>
+            <div class="sidebar-link active" data-target="welcome">
+                <i class="fas fa-star"></i> Bem vindo
+            </div>
+            <div class="sidebar-link" data-target="rules">
+                <i class="fas fa-book"></i> Regras
+            </div>
+            <div class="sidebar-link" data-target="terms">
+                <i class="fas fa-file-contract"></i> Termos
+            </div>
+        </div>
+
+        <!-- CATEGORIA: GERAL -->
+        <div class="sidebar-group">
+            <div class="sidebar-title">Geral</div>
+            <div class="sidebar-link" data-target="staff-team">
+                <i class="fas fa-users-cog"></i> Como funciona a equipe staff
+            </div>
+            <div class="sidebar-link" data-target="join-staff">
+                <i class="fas fa-user-plus"></i> Como entrar para staff
+            </div>
+            <div class="sidebar-link" data-target="how-to-buy">
+                <i class="fas fa-shopping-cart"></i> Como comprar
+            </div>
+            <div class="sidebar-link" data-target="events">
+                <i class="fas fa-calendar-alt"></i> Eventos do servidor
+            </div>
+        </div>
+
+        <!-- CATEGORIA: INSTITUCIONAL -->
+        <div class="sidebar-group">
+            <div class="sidebar-title">Institucional</div>
+            <div class="sidebar-link" data-target="contact">
+                <i class="fas fa-envelope"></i> Contato
+            </div>
+            <div class="sidebar-link" data-target="partners">
+                <i class="fas fa-handshake"></i> Parcerias
+            </div>
+            <div class="sidebar-link" data-target="influencer">
+                <i class="fas fa-video"></i> Influenciador
+            </div>
+            <div class="sidebar-link" data-target="about">
+                <i class="fas fa-info-circle"></i> Sobre o servidor
+            </div>
+        </div>
+
+        <!-- CATEGORIA: MENCIONADOS -->
+        <div class="sidebar-group">
+            <div class="sidebar-title">Mencionados</div>
+            <div class="sidebar-link" data-target="mentioned-partners">
+                <i class="fas fa-handshake"></i> Parceiros
+            </div>
+        </div>
+    </aside>
+
+    <!-- 3️⃣ CONTEÚDO PRINCIPAL (CENTRO) -->
+    <main class="main-wrapper">
+        <div class="content-container">
+            
+            <!-- SECTION: WELCOME -->
+            <section id="welcome" class="section-content">
+                <h1>Bem-vindo à Wiki da Mystic Buuixx! <i class="fas fa-star" style="color: #FFD700; font-size: 0.8em;"></i></h1>
+                
+                <p class="intro-text">
+                    A Wiki da Mystic Buuixx é o guia oficial para todos os jogadores, desde iniciantes até veteranos, que querem explorar ao máximo tudo o que o servidor tem a oferecer. Vamos começar?
+                </p>
+
+                <div class="info-block">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <strong>Dica:</strong> Use a busca (Ctrl + K) para encontrar rapidamente o que você precisa.
+                    </div>
+                </div>
+
+                <h2>💬 Precisa de ajuda?</h2>
+                <p>
+                    Nossa equipe de suporte está disponível no Discord para resolver dúvidas, solucionar problemas e garantir que você tenha a melhor experiência no servidor. Entre no nosso <a href="https://discord.gg/kYYxnv6mft" target="_blank">Discord ↗</a> para receber suporte em tempo real!
+                </p>
+            </section>
+
+            <!-- SECTION: RULES -->
+            <section id="rules" class="section-content hidden">
+                <div class="rules-container">
+                    <h1><i class="fas fa-shield-alt" style="color: #5865F2;"></i> Regras do Servidor</h1>
+                    <p class="subtitle">Siga as diretrizes para uma boa convivência na comunidade.</p>
+                    
+                    <div class="rules-box">
+                        <h3><i class="fas fa-list-ul"></i> Regras Gerais</h3>
+                        
+                        <ul class="rules-list">
+                            <li><strong>1.</strong> É proibido flood, spam ou envio de mensagens repetitivas nos canais.</li>
+                            <li><strong>2.</strong> Não será tolerado assédio, ameaças, bullying, preconceito ou qualquer forma de discriminação.</li>
+                            <li><strong>3.</strong> É proibido marcar membros, cargos ou a staff excessivamente sem necessidade.</li>
+                            <li><strong>4.</strong> Invadir a privacidade de membros, clientes ou da staff é estritamente proibido.</li>
+                            <li><strong>5.</strong> Conteúdo NSFW/NSFL (+18), imagens ou vídeos pesados não são permitidos.</li>
+                            <li><strong>6.</strong> Não compartilhe links suspeitos, maliciosos ou de sites não confiáveis.</li>
+                            <li><strong>7.</strong> Evite discussões polêmicas que possam gerar conflitos no servidor.</li>
+                            <li><strong>8.</strong> É proibido incentivar ou praticar atividades ilegais, incluindo fraudes.</li>
+                            <li><strong>9.</strong> Não compartilhe dados pessoais seus ou de terceiros (nome real, dados familiares, senhas, etc).</li>
+                            <li><strong>10.</strong> É proibido pedir, vender ou trocar contas, itens, gamepasses ou Robux fora da loja oficial.</li>
+                            <li><strong>11.</strong> Utilize sempre o canal correto para cada assunto e evite off-topic.</li>
+                            <li><strong>12.</strong> Não incentive brigas, discussões ou conflitos entre membros.</li>
+                            <li><strong>13.</strong> Golpes, scams ou tentativas de fraude são terminantemente proibidos, inclusive no privado.</li>
+                            <li><strong>14.</strong> Xingamentos, ofensas ou desrespeito a qualquer membro não serão tolerados.</li>
+                            <li><strong>15.</strong> É proibido falar, incentivar ou participar de raids no Discord.</li>
+                            <li><strong>16.</strong> Não divulgue ou incentive servidores, executores, exploits ou hacks.</li>
+                            <li><strong>17.</strong> Em chamadas de voz, é proibido áudio estourado, gritos ou atitudes que atrapalhem os outros.</li>
+                            <li><strong>18.</strong> É proibido utilizar contas alternativas (alts), fakes ou fingir ser outra pessoa sem autorização da staff.</li>
+                            <li><strong>19.</strong> Desrespeito à staff, atendentes ou administradores não será tolerado.</li>
+                            <li><strong>20.</strong> Nomes ou fotos de perfil com conteúdo ofensivo, duvidoso ou de duplo sentido são proibidos.</li>
+                            <li><strong>21.</strong> Não reinserir, convidar ou tentar contornar punições de membros banidos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="terms" class="section-content hidden">
+                <h1>Termos e Condições – Mystic Buuixx</h1>
+                <p class="intro-text">
+                    Leia atentamente os termos abaixo. Clique em cada título para abrir ou fechar o conteúdo.
+                </p>
+
+                <div class="terms-accordion">
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">1.</span>
+                            <span class="term-title">Reembolso</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                Reembolsos serão concedidos somente em situações excepcionais, avaliadas individualmente pela equipe da Mystic Buuixx.
+                                Não serão aceitas solicitações baseadas em motivos pessoais, como arrependimento, erro na escolha do produto, falta de leitura
+                                das descrições ou mudança de opinião após a compra. Ao efetuar uma compra, o cliente declara estar ciente de todas as
+                                informações do produto adquirido.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">2.</span>
+                            <span class="term-title">Prazo de Entrega</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                O prazo padrão de entrega é de até 72 horas após a confirmação do pagamento. Esse prazo pode variar em casos excepcionais,
+                                como instabilidades externas, manutenções, alta demanda ou problemas técnicos. A Mystic Buuixx se compromete a manter o
+                                cliente informado sempre que houver qualquer alteração no prazo estimado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">3.</span>
+                            <span class="term-title">Responsabilidade pelo Uso da Conta</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                Ao realizar compras em nossa loja, o cliente assume total responsabilidade pelo uso de sua conta. A Mystic Buuixx não se
+                                responsabiliza por punições, perdas, bloqueios ou quaisquer consequências decorrentes do uso indevido da conta, compartilhamento
+                                de dados ou violação dos termos da plataforma utilizada.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">4.</span>
+                            <span class="term-title">Privacidade de Dados Pessoais</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                A Mystic Buuixx compromete-se a proteger as informações pessoais de seus clientes, adotando medidas de segurança adequadas.
+                                Os dados coletados serão utilizados exclusivamente para processar pedidos, fornecer suporte e aprimorar a experiência do usuário,
+                                não sendo compartilhados com terceiros, salvo quando exigido por lei.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">5.</span>
+                            <span class="term-title">Uso Indevido, Fraudes e Má-Fé</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                Qualquer tentativa de fraude, chargeback indevido, exploração de falhas, fornecimento de informações falsas ou uso de métodos
+                                ilícitos resultará no bloqueio imediato e permanente do usuário, sem direito a reembolso. A Mystic Buuixx reserva-se o direito
+                                de tomar medidas administrativas e legais quando necessário.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">6.</span>
+                            <span class="term-title">Comunicação e Atendimento</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                Todo contato com a equipe deve ocorrer exclusivamente pelos canais oficiais do servidor. Mensagens ofensivas, ameaças,
+                                desrespeito, spam ou tentativas de pressionar a equipe poderão resultar em advertências, punições ou bloqueio do atendimento.
+                                O respeito mútuo é essencial para um suporte eficiente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">7.</span>
+                            <span class="term-title">Alterações dos Termos</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                A Mystic Buuixx reserva-se o direito de alterar, atualizar ou modificar estes termos a qualquer momento, sem aviso prévio.
+                                É responsabilidade do usuário revisar periodicamente os termos antes de realizar novas compras ou utilizar os serviços oferecidos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-item">
+                        <button class="term-header" type="button">
+                            <span class="term-index">8.</span>
+                            <span class="term-title">Aceitação dos Termos</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="term-body">
+                            <p>
+                                Ao realizar qualquer compra, abrir tickets ou utilizar os serviços da Mystic Buuixx, o usuário declara que leu, compreendeu
+                                e concorda integralmente com todos os termos e condições aqui descritos. O descumprimento das regras poderá resultar em sanções
+                                sem aviso prévio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: STAFF TEAM -->
+            <section id="staff-team" class="section-content hidden">
+                <h1>💼 Sistema de Pontos, Cargos, Pagamentos e Hierarquia – Mystic Buuixx</h1>
+                <p class="intro-text">
+                    A equipe Mystic Buuixx funciona com base em hierarquia, desempenho, pontos acumulados e responsabilidade.
+                    Cada cargo possui limite de vagas, funções específicas e remuneração mensal, podendo haver bônus por desempenho.
+                </p>
+
+                <h2>🔢 Limite de Vagas por Cargo</h2>
+                <ul class="links-list">
+                    <li>Aprendiz Staff: até 10 membros</li>
+                    <li>Suporte: até 10 membros</li>
+                    <li>Entregador Aprendiz: até 1 membro</li>
+                    <li>Entregador: até 2 membros</li>
+                    <li>Moderador: até 2 membros</li>
+                    <li>Moderador Chefe: 1 membro</li>
+                    <li>Gerente: 1 membro</li>
+                    <li>Ajudante de Dono: 1 membro</li>
+                </ul>
+                <p>
+                    Só é possível subir de cargo se não estiver no limite ou se o membro ultrapassar outro em pontos acumulados.
+                </p>
+
+                <h2>💰 Pagamento Mensal por Cargo</h2>
+
+                <h3>🧪 Aprendiz Staff</h3>
+                <p>
+                    Pagamento: não recebe (fase de teste).<br>
+                    Objetivo: aprendizado, adaptação e avaliação.
+                </p>
+
+                <h3>🧪 Suporte</h3>
+                <p>
+                    Pagamento: não recebe (fase de teste).<br>
+                    Objetivo: atendimento básico e auxílio inicial à equipe.
+                </p>
+
+                <h3>📦 Entregador Aprendiz</h3>
+                <p>
+                    Pagamento: 2.000 Robux por mês.<br>
+                    Função: auxiliar em entregas e aprender o processo.<br>
+                    Limite: 1 membro.
+                </p>
+
+                <h3>🚚 Entregador</h3>
+                <p>
+                    Pagamento: 4.000 Robux por mês.<br>
+                    Bônus: Entregador do mês entre 5.000 e 6.000 Robux.<br>
+                    Função: entregas, atendimento e suporte ao cliente.<br>
+                    Limite: 2 membros.
+                </p>
+
+                <h3>🛡️ Moderador</h3>
+                <p>
+                    Pagamento: 6.000 Robux por mês.<br>
+                    Bônus: Moderador do mês até 7.000 Robux.<br>
+                    Função: moderação, suporte à equipe e aplicação de regras.<br>
+                    Limite: 2 membros.
+                </p>
+
+                <h3>⭐ Moderador Chefe</h3>
+                <p>
+                    Pagamento: entre 7.000 e 8.000 Robux por mês.<br>
+                    Função: supervisionar moderadores e organizar a moderação.<br>
+                    Limite: 1 membro.
+                </p>
+
+                <h3>🎽 Gerente</h3>
+                <p>
+                    Pagamento: entre 9.000 e 12.000 Robux por mês.<br>
+                    Função: gerenciar toda a equipe, promoções e desempenho.<br>
+                    Limite: 1 membro.
+                </p>
+
+                <h3>👑 Ajudante de Dono</h3>
+                <p>
+                    Pagamento: entre 10.000 e 20.000 Robux por mês (valor variável conforme desempenho).<br>
+                    Função: auxiliar diretamente o Dono e administrar o servidor.<br>
+                    Limite: 1 membro.
+                </p>
+
+                <h2>📈 Requisitos Especiais para Cargos Altos</h2>
+                <p>Para se tornar Ajudante de Dono, o membro deve obrigatoriamente:</p>
+                <ul class="links-list">
+                    <li>Ter mais de 7.300 pontos acumulados</li>
+                    <li>Ter mais de 2 anos no servidor</li>
+                    <li>Ser comprador ativo</li>
+                    <li>Ter histórico limpo e boa postura</li>
+                    <li>Demonstrar extrema responsabilidade e compromisso</li>
+                </ul>
+
+                <h2>🧩 Hierarquia e Supervisão</h2>
+                <ul class="links-list">
+                    <li>Entregadores e cargos abaixo: não comandam, apenas ajudam</li>
+                    <li>Moderadores: supervisionam entregadores e suportes</li>
+                    <li>Moderador Chefe: supervisiona os moderadores</li>
+                    <li>Gerente: supervisiona o Moderador Chefe e o Ajudante de Dono</li>
+                    <li>Ajudante de Dono: responde diretamente ao Dono</li>
+                    <li>Dono: autoridade máxima do servidor</li>
+                </ul>
+
+                <h2>⚠️ Regras Importantes</h2>
+                <ul class="links-list">
+                    <li>Ninguém sobe de cargo apenas por tempo</li>
+                    <li>Pontos, desempenho e postura são decisivos</li>
+                    <li>Desrespeito à hierarquia gera punição</li>
+                    <li>Pagamentos podem ser ajustados conforme desempenho</li>
+                    <li>Promoções passam sempre por análise</li>
+                </ul>
+            </section>
+
+            <!-- SECTION: JOIN STAFF -->
+            <section id="join-staff" class="section-content hidden">
+                <h1>📚 Faça parte da Equipe Mystic Buuixx</h1>
+                <p class="intro-text">
+                    Já pensou em fazer parte da equipe da Mystic Buuixx? Nossa equipe é formada por pessoas
+                    comprometidas com organização, suporte e crescimento da comunidade, sempre prezando pelo
+                    respeito, profissionalismo e bom atendimento.
+                </p>
+
+                <h2>🎉 Sobre a Equipe</h2>
+                <p>
+                    A equipe Mystic Buuixx é responsável por manter o servidor organizado, seguro e funcional.
+                    Os membros atuam no suporte ao público, moderação, entregas e gerenciamento, garantindo que
+                    todos tenham uma boa experiência.
+                </p>
+                <p>
+                    Cada cargo possui funções específicas, mas todos trabalham juntos com um único objetivo:
+                    oferecer qualidade, confiança e um ambiente saudável para a comunidade.
+                </p>
+
+                <h2>🔑 Cargos da Equipe Mystic Buuixx</h2>
+                <ul class="links-list">
+                    <li>👑 Ajudante de Dono</li>
+                    <li>🎽 Gerente</li>
+                    <li>⭐ Moderador Chefe</li>
+                    <li>🛡️ Moderador</li>
+                    <li>📦 Entregador</li>
+                    <li>📦 Entregador Aprendiz</li>
+                    <li>🛠️ Staff</li>
+                    <li>🎧 Suporte</li>
+                    <li>📕 Aprendiz Staff</li>
+                </ul>
+
+                <h2>⭐ Sistema de Pontos e Progressão de Cargos</h2>
+                <p>
+                    A Mystic Buuixx possui um sistema interno de pontos, criado para valorizar o esforço,
+                    dedicação e desempenho dos membros da equipe.
+                </p>
+                <p>Os pontos são conquistados através de:</p>
+                <ul class="links-list">
+                    <li>Bom atendimento ao público</li>
+                    <li>Atividade e comprometimento</li>
+                    <li>Cumprimento correto das funções do cargo</li>
+                    <li>Ajuda à comunidade e à equipe</li>
+                    <li>Responsabilidade e boa postura</li>
+                </ul>
+                <p>Conforme o membro acumula pontos, ele pode:</p>
+                <ul class="links-list">
+                    <li>Subir de cargo</li>
+                    <li>Receber mais responsabilidades</li>
+                    <li>Ganhar mais confiança da administração</li>
+                    <li>Evoluir dentro da hierarquia da equipe</li>
+                </ul>
+                <p>
+                    A progressão não é automática. Todas as promoções passam por avaliação da liderança,
+                    garantindo justiça e mérito para todos.
+                </p>
+
+                <h2>💡 Requisitos Obrigatórios</h2>
+                <p>Para garantir uma equipe qualificada e comprometida, todos os candidatos devem cumprir:</p>
+                <ul class="links-list">
+                    <li>Boa comunicação verbal e escrita</li>
+                    <li>Ter no mínimo 14 anos</li>
+                    <li>Conhecimento sobre a comunidade e seus sistemas</li>
+                    <li>Capacidade de trabalhar em equipe</li>
+                    <li>Empatia, paciência e respeito com todos</li>
+                    <li>Proatividade para resolver problemas e sugerir melhorias</li>
+                    <li>Compromisso com a Mystic Buuixx, sem conflitos de interesse</li>
+                </ul>
+
+                <h2>⚠️ Regras e Observações Importantes</h2>
+                <h3>🔴 Transparência e Verdade</h3>
+                <p>
+                    Qualquer informação falsa ou enganosa resultará em desclassificação imediata.
+                </p>
+                <h3>🔴 Confidencialidade</h3>
+                <p>
+                    É proibido divulgar informações internas, decisões ou diretrizes da equipe sem autorização.
+                </p>
+                <h3>🔴 Processo de Seleção</h3>
+                <p>
+                    Após o envio do formulário, ele será analisado manualmente. Caso aprovado, o candidato
+                    receberá contato com as instruções da próxima etapa.
+                </p>
+                <h3>🔴 Reaplicação</h3>
+                <p>
+                    Caso não seja selecionado, será necessário aguardar 30 dias para enviar uma nova candidatura.
+                </p>
+                <h3>🔴 Proibição de Solicitação de Leitura</h3>
+                <p>
+                    Qualquer pedido, cobrança ou indireta para que o formulário seja lido resultará em
+                    desclassificação automática.
+                </p>
+
+                <h2>📝 Onde posso me candidatar?</h2>
+                <p>
+                    Você pode acessar o formulário oficial pelo link abaixo:
+                </p>
+                <p>
+                    🔗 <a href="https://docs.google.com/forms/d/e/1FAIpQLScQh7kvK-ciob3Tco2y7fS0Xf1tZQv6_YVreGQk1Y7LfQJBNw/viewform?usp=dialog" target="_blank">
+                        Formulário para Equipe Mystic Buuixx
+                    </a>
+                </p>
+
+                <h2>📩 Após o Envio do Formulário</h2>
+                <p>
+                    Se sua candidatura for aprovada, você receberá uma mensagem oficial com os próximos passos.
+                    Mantenha suas mensagens diretas (DMs) abertas.
+                </p>
+                <p>
+                    Não possuímos um prazo fixo de resposta. As candidaturas são analisadas conforme a necessidade
+                    da equipe.
+                </p>
+                <p>
+                    Para verificar a situação:
+                </p>
+                <ul class="links-list">
+                    <li>Se o formulário mostrar que você já se inscreveu, sua candidatura ainda está em análise.</li>
+                    <li>Se permitir nova inscrição, significa que não foi aprovado e poderá tentar novamente após o prazo.</li>
+                </ul>
+                <p>
+                    ✨ A Mystic Buuixx valoriza dedicação, respeito, compromisso e evolução constante. Se você acredita
+                    que tem o perfil certo, esperamos sua candidatura!
+                </p>
+            </section>
+
+            <!-- SECTION: HOW TO BUY -->
+            <section id="how-to-buy" class="section-content hidden">
+                <h1>Como Comprar 🛒</h1>
+                <p class="intro-text">
+                    Comprar na Mystic Buuixx é simples, seguro e totalmente acompanhado pela equipe. Siga o passo a passo abaixo.
+                </p>
+                <h2>🛍️ Passo a passo da compra</h2>
+                <ul class="links-list">
+                    <li>Entre no nosso servidor do Discord.</li>
+                    <li>Abra um ticket no canal de suporte/compras.</li>
+                    <li>Informe o produto que deseja (Robux, gamepass, serviço etc.).</li>
+                    <li>O atendente irá passar o valor, forma de pagamento e instruções.</li>
+                    <li>Realize o pagamento pelo método informado (geralmente Pix).</li>
+                    <li>Envie o comprovante no próprio ticket.</li>
+                    <li>A equipe irá confirmar o pagamento e registrar sua compra no sistema.</li>
+                    <li>Seu pedido será entregue dentro do prazo combinado, seguindo os termos da loja.</li>
+                </ul>
+                <h2>🔒 Segurança e confiança</h2>
+                <p>
+                    Todas as compras seguem os <strong>Termos e Condições</strong> da Mystic Buuixx. A equipe registra logs,
+                    comprovações e histórico de entregas para garantir transparência e proteção tanto para o cliente quanto
+                    para a loja.
+                </p>
+                <p>
+                    Em caso de dúvida, sempre utilize apenas os canais oficiais do servidor e nunca realize pagamentos
+                    fora deles.
+                </p>
+                <p>
+                    Você também pode acessar diretamente nossa loja em desenvolvimento:
+                    <a href="http://localhost/loja" target="_blank">http://localhost/loja</a>
+                </p>
+            </section>
+
+            <!-- SECTION: EVENTS -->
+            <section id="events" class="section-content hidden">
+                <h1>Eventos do Servidor 🎉</h1>
+                <p class="intro-text">
+                    A Mystic Buuixx realiza eventos para movimentar a comunidade, premiar jogadores ativos e trazer
+                    experiências divertidas para todos.
+                </p>
+                <h2>📅 Frequência dos Eventos</h2>
+                <p>
+                    Atualmente, os eventos acontecem em média <strong>2 vezes por mês</strong>, podendo variar conforme
+                    a demanda e a agenda da equipe.
+                </p>
+                <h2>🔔 Avisos de Eventos</h2>
+                <p>
+                    Todos os eventos são anunciados antecipadamente no <strong>chat de avisos</strong> do servidor
+                    no Discord. Fique atento às notificações para não perder nenhuma oportunidade.
+                </p>
+                <p>
+                    Lá são informados:
+                </p>
+                <ul class="links-list">
+                    <li>Data e horário do evento;</li>
+                    <li>Regras específicas de participação;</li>
+                    <li>Premiações disponíveis;</li>
+                    <li>Requisitos mínimos, se houver.</li>
+                </ul>
+                <p>
+                    Participe sempre que puder — além das recompensas, os eventos contam pontos de atividade e engajamento
+                    para a comunidade.
+                </p>
+            </section>
+
+            <!-- SECTION: ABOUT -->
+            <section id="about" class="section-content hidden">
+                <h1>Sobre o Servidor ℹ️</h1>
+                <div class="about-server-wrapper">
+                    <p class="intro-text about-typewriter-text" id="about-typewriter"></p>
+                </div>
+            </section>
+
+            <!-- SECTION: CONTACT -->
+            <section id="contact" class="section-content hidden">
+                <h1>Contato 📧</h1>
+                <p class="intro-text">
+                    Utilize apenas os canais oficiais para falar com a equipe da Mystic Buuixx, garantir segurança e
+                    evitar golpes.
+                </p>
+                <h2>📨 E-mail oficial</h2>
+                <p>
+                    Para assuntos formais, comerciais ou dúvidas específicas, você pode utilizar o e-mail:
+                </p>
+                <p><strong>Gmail:</strong> df136767@gmail.com</p>
+
+                <h2>🎧 Discord</h2>
+                <p>
+                    Para suporte rápido, atendimento de compras, dúvidas gerais ou questões sobre o servidor,
+                    utilize os <strong>tickets de suporte</strong> dentro do nosso servidor do Discord.
+                </p>
+                <p>
+                    Evite tratar assuntos importantes em mensagens privadas com membros da equipe. Sempre prefira os
+                    tickets, onde tudo fica registrado e mais organizado.
+                </p>
+            </section>
+
+            <!-- SECTION: PARTNERS -->
+            <section id="partners" class="section-content hidden">
+                <h1>Parcerias 🤝</h1>
+                <p class="intro-text">
+                    A Mystic Buuixx está aberta a parcerias com servidores, projetos e criadores que compartilhem
+                    dos mesmos valores de organização, respeito e seriedade.
+                </p>
+                <h2>🤝 Como formar uma parceria</h2>
+                <p>
+                    Para solicitar parceria, entre em contato com a equipe através dos <strong>tickets de suporte</strong>
+                    no Discord. Explique seu projeto, servidor ou canal, e quais ideias de parceria você tem em mente.
+                </p>
+                <p>
+                    Após análise, a equipe irá responder informando se a parceria foi aprovada ou não, e quais serão
+                    os próximos passos.
+                </p>
+                <h2>📣 Divulgação de Parceiros</h2>
+                <p>
+                    Futuramente, os servidores e projetos parceiros aprovados aparecerão aqui nesta página, com informações
+                    básicas e links oficiais.
+                </p>
+            </section>
+
+            <!-- SECTION: INFLUENCER -->
+            <section id="influencer" class="section-content hidden">
+                <h1>Influenciador 🎥</h1>
+                <p class="intro-text">
+                    O programa de influenciadores da Mystic Buuixx é voltado para criadores de conteúdo que divulgam
+                    a comunidade e a loja de forma séria e constante.
+                </p>
+                <h2>📺 Como funciona</h2>
+                <p>
+                    Canais aprovados como influenciadores poderão ter sua <strong>logo</strong> e o <strong>nome do canal</strong>
+                    exibidos aqui, junto com informações como:
+                </p>
+                <ul class="links-list">
+                    <li>Quantidade aproximada de inscritos;</li>
+                    <li>Volume geral de visualizações;</li>
+                    <li>Link direto para o canal no YouTube.</li>
+                </ul>
+                <p>
+                    A lista de canais será organizada em ordem do <strong>maior para o menor</strong>, com base em inscritos
+                    e relevância.
+                </p>
+                <h2>📝 Como se tornar influenciador</h2>
+                <p>
+                    Para se candidatar, entre em contato com a equipe pelos tickets de suporte no Discord, enviando:
+                </p>
+                <ul class="links-list">
+                    <li>Link do seu canal;</li>
+                    <li>Número de inscritos;</li>
+                    <li>Tipo de conteúdo que produz;</li>
+                    <li>Como pretende divulgar a Mystic Buuixx.</li>
+                </ul>
+                <p>
+                    Após análise, caso seja aprovado, seu canal poderá ser exibido aqui com destaque.
+                </p>
+            </section>
+
+            <!-- SECTION: MENTIONED PARTNERS -->
+            <section id="mentioned-partners" class="section-content hidden">
+                <h1>Parceiros 🌐</h1>
+                <p class="intro-text">
+                    🌐 Nesta parte, você confere servidores que admiramos e que é ou futuramente poderão se tornar parceiros.
+                    (Obs.: a Cerry está aqui porque serviu de grande inspiração.)
+                </p>
+                <div class="partner-grid">
+                    <a class="partner-card" data-invite="https://discord.gg/j6UrQwXmGq" href="https://discord.gg/j6UrQwXmGq" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            MB
+                        </div>
+                        <div class="partner-info">
+                            <p class="partner-name">Servidor parceiro</p>
+                            <p class="partner-desc">Servidor que admiramos e que pode se tornar parceiro oficial.</p>
+                            <div class="partner-meta">Carregando membros...</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Fallback Section -->
+            <section id="generic-content" class="section-content hidden">
+                <h1>Página em Construção 🚧</h1>
+                <div class="dev-badge">Em desenvolvimento</div>
+                <p>O conteúdo desta página estará disponível em breve.</p>
+            </section>
+
+        </div>
+
+        <!-- TOC Sidebar -->
+        <aside class="toc-sidebar">
+            <div class="toc-title">Nesta Página</div>
+            <a href="#" class="toc-link active">Início</a>
+        </aside>
+    </main>
+
+    <!-- 5️⃣ RODAPÉ (FOOTER) -->
+    <footer class="site-footer">
+        <p>© 2026 Mystic Buuixx. Todos os direitos reservados.</p>
+        <p style="font-size: 0.8em; margin-top: 5px;">Fornecido por Mystic Wiki Engine</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <div class="sidebar-overlay"></div>
+</body>
+</html>
