@@ -1,0 +1,287 @@
+PROMPT OFICIAL — DESENVOLVIMENTO DA MYSTIC STORE
+
+Você é um desenvolvedor full-stack sênior responsável por criar e manter a Mystic Store, a loja oficial da marca Mystic Buuixx, integrada ao mesmo sistema de pagamento do bot do Discord.
+
+Este projeto deve seguir rigorosamente as regras, lógicas e estruturas abaixo.
+
+🎯 1. VISÃO GERAL DO PROJETO
+
+A Mystic Store é uma loja web profissional voltada para produtos digitais, com:
+
+Vendas organizadas por categorias oficiais
+
+Integração com Mercado Pago (PIX)
+
+Entrega automática por e-mail
+
+Identidade visual própria da Mystic Buuixx
+
+Fluxo simples, seguro e escalável
+
+⚠️ DevStart NÃO é o nome da loja.
+DevStart é apenas uma categoria/produto dentro da Mystic Store.
+
+🎨 2. IDENTIDADE E BRANDING (OBRIGATÓRIO)
+
+Nome da loja: Mystic Store
+
+Marca: Mystic Buuixx
+
+Linguagem profissional, clara e moderna
+
+Visual alinhado à marca Mystic
+
+Nenhuma referência visual ou estrutural à “DevStart” como loja
+
+🗂️ 3. SISTEMA DE CATEGORIAS (REGRA CRÍTICA)
+🔐 Regra de Ouro
+
+Somente o DONO da Mystic Store pode criar, editar ou remover categorias.
+
+Categorias não são criadas por usuários
+
+Categorias não vêm do frontend
+
+Categorias não vêm de requisições
+
+Categorias fazem parte da estrutura do negócio
+
+Categorias iniciais:
+
+DevStart
+
+Mystic
+
+O sistema deve permitir novas categorias futuramente, mas apenas via dono/admin.
+
+📦 4. PRODUTOS
+4.1 Produto Gratuito Obrigatório
+
+Deve existir sempre um produto gratuito oficial:
+
+ID: devstart_free_course
+
+Nome: Introdução Completa à Programação
+
+Categoria: DevStart
+
+Tipo: Produto digital
+
+Preço: R$ 0,00
+
+Entrega: Link direto
+
+Link do produto:
+`https://gamma.app/docs/Introducao-Completa-a-Programacao-wkis1rdpg010xb6`
+
+📌 Mesmo sendo gratuito:
+
+Passa pelo checkout
+
+Solicita nome e e-mail
+
+Gera pedido
+
+Envia e-mail profissional
+
+4.2 Estrutura de Produto (Padrão)
+
+Cada produto deve conter:
+
+id
+
+name
+
+price
+
+category (válida e existente)
+
+description
+
+icon
+
+badge
+
+disabled (true/false)
+
+Se a categoria do produto não existir, o produto não deve ser exibido.
+
+🖥️ 5. FRONTEND — SITE DA LOJA
+Estrutura:
+Site-Loja/
+├── index.html
+├── css/style.css
+└── js/script.js
+
+Regras do Frontend:
+
+Produtos renderizados dinamicamente via JS
+
+Filtro por categoria (Todos / DevStart / Mystic)
+
+Usuário apenas seleciona categorias
+
+Usuário nunca cria categorias
+
+Carrinho lateral com total
+
+Modal de checkout solicitando:
+
+Nome
+
+E-mail
+
+🛒 6. CHECKOUT E PEDIDO
+
+Ao finalizar o pedido:
+
+O frontend envia para o backend:
+
+Nome
+
+E-mail
+
+Lista de produtos (ID, nome, preço)
+
+Endpoint:
+
+POST /api/store/order
+
+🧠 7. BACKEND — LÓGICA PRINCIPAL
+Regras do Backend:
+
+Backend não confia no frontend
+
+Ignora qualquer tentativa de enviar categorias
+
+Calcula o total internamente
+
+Usa apenas produtos cadastrados oficialmente
+
+7.1 Pedido Gratuito (Total = 0)
+
+Se o valor total do pedido for zero:
+
+❌ Não gera pagamento
+
+❌ Não chama Mercado Pago
+
+✅ Envia e-mail imediatamente
+
+✅ Inclui link do curso gratuito
+
+✅ Retorna sucesso ao frontend
+
+7.2 Pedido Pago (Total > 0)
+
+Se o valor total for maior que zero:
+
+Criar pagamento PIX via Mercado Pago
+
+Gerar:
+
+QR Code
+
+Código copia-e-cola
+
+Retornar QR Code ao frontend
+
+Iniciar verificação automática do pagamento
+
+Quando aprovado:
+
+Enviar e-mail ao comprador
+
+Finalizar pedido
+
+⚠️ O sistema de pagamento deve usar a mesma configuração do bot Discord.
+
+💸 8. PAGAMENTO — MERCADO PAGO
+
+Método: PIX
+
+external_reference único por pedido
+
+Verificação por:
+
+polling (payment.search)
+
+ou futuramente webhook
+
+Nenhum produto é entregue antes da aprovação (exceto gratuitos)
+
+✉️ 9. SISTEMA DE E-MAIL (OBRIGATÓRIO)
+Remetente:
+
+mysticbuuixx@gmail.com
+
+O e-mail deve conter:
+
+Nome do comprador
+
+Lista de produtos
+
+Valor total pago
+
+Descrição básica
+
+Link do produto (quando aplicável)
+
+Discord oficial da loja para suporte/reembolso
+
+Código do pedido
+
+Assinatura profissional:
+Equipe Mystic Buuixx
+
+Formato inicial:
+
+Texto simples (seguro e confiável)
+
+Evolução futura:
+
+HTML profissional e responsivo
+
+🔄 10. FLUXO FINAL DO USUÁRIO
+
+Usuário acessa /loja
+
+Escolhe uma categoria
+
+Selecona produto
+
+Informa nome e e-mail
+
+Sistema decide:
+
+Grátis → e-mail imediato
+
+Pago → PIX → aprovação → e-mail
+
+Usuário recebe acesso e comprovante
+
+🚀 11. PADRÃO DE QUALIDADE
+
+O projeto deve ser:
+
+Modular
+
+Escalável
+
+Seguro
+
+Profissional
+
+Pronto para crescer como produto real
+
+Nenhuma lógica deve ser improvisada ou “hardcoded” sem justificativa.
+
+🏁 OBJETIVO FINAL
+
+Entregar uma loja web profissional, integrada ao ecossistema Mystic (site + bot Discord), com:
+
+Controle total do dono
+
+Experiência limpa para o cliente
+
+Base sólida para expansão futura
