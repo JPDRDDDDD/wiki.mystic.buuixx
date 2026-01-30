@@ -901,6 +901,45 @@ p {
         margin-right: 0;
     }
 
+    /* Partner Card Mobile Optimization */
+    .partner-grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .partner-card {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+        justify-content: flex-start;
+        background: rgba(15, 23, 42, 0.95);
+        border-color: rgba(59, 130, 246, 0.3);
+        border-radius: 12px;
+    }
+
+    .partner-card .partner-info {
+        opacity: 1;
+        width: auto;
+        padding-left: 12px;
+        padding-right: 0;
+        transform: none;
+    }
+
+    .partner-card:hover {
+        width: 100%;
+        height: auto;
+        transform: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .partner-logo {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        font-size: 1rem;
+    }
+}
+
     .mobile-menu-btn {
         display: block;
     }
