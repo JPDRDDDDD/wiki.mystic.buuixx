@@ -29,10 +29,6 @@
             </div>
 
             <nav class="nav-buttons">
-                <a href="https://discord.gg/ec2KKPvpbF" target="_blank" class="nav-btn">Discord</a>
-                <a href="https://mysticonlineshop.vercel.app/" target="_blank" class="nav-btn btn-store-nav" title="Acessar a Loja">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
                 <a href="https://mysticbuuixx.keepo.bio" target="_blank" class="nav-btn" title="Redes Sociais"><i class="fas fa-share-alt"></i></a>
             </nav>
         </div>
@@ -99,13 +95,7 @@
             </div>
         </div>
 
-        <!-- CATEGORIA: MENCIONADOS -->
-        <div class="sidebar-group">
-            <div class="sidebar-title">Mencionados</div>
-            <div class="sidebar-link" data-target="mentioned-partners">
-                <i class="fas fa-handshake"></i> Parceiros
-            </div>
-        </div>
+
     </aside>
 
     <!-- 3️⃣ CONTEÚDO PRINCIPAL (CENTRO) -->
@@ -619,7 +609,7 @@
                 <p>
                     Para assuntos formais, comerciais ou dúvidas específicas, você pode utilizar o e-mail:
                 </p>
-                <p><strong>Gmail:</strong> df136767@gmail.com</p>
+                <p><strong>Gmail:</strong> mysticbuuixx@gmail.com</p>
 
                 <h2>🎧 Discord</h2>
                 <p>
@@ -691,26 +681,7 @@
                 </p>
             </section>
 
-            <!-- SECTION: MENTIONED PARTNERS -->
-            <section id="mentioned-partners" class="section-content hidden">
-                <h1>Parceiros 🌐</h1>
-                <p class="intro-text">
-                    🌐 Nesta parte, você confere servidores que admiramos e que é ou futuramente poderão se tornar parceiros.
-                    (Obs.: a Cerry está aqui porque serviu de grande inspiração.)
-                </p>
-                <div class="partner-grid">
-                    <a class="partner-card" data-invite="https://discord.gg/j6UrQwXmGq" href="https://discord.gg/j6UrQwXmGq" target="_blank" rel="noopener noreferrer">
-                        <div class="partner-logo">
-                            MB
-                        </div>
-                        <div class="partner-info">
-                            <p class="partner-name">Servidor parceiro</p>
-                            <p class="partner-desc">Servidor que admiramos e que pode se tornar parceiro oficial.</p>
-                            <div class="partner-meta">Carregando membros...</div>
-                        </div>
-                    </a>
-                </div>
-            </section>
+
 
             <!-- Fallback Section -->
             <section id="generic-content" class="section-content hidden">
@@ -787,6 +758,7 @@
             document.removeEventListener('keydown', forcePlay);
             document.removeEventListener('touchstart', forcePlay);
             document.removeEventListener('scroll', forcePlay);
+            document.removeEventListener('mousemove', forcePlay);
         }
 
         // Adiciona listeners para qualquer interação
@@ -794,6 +766,7 @@
         document.addEventListener('keydown', forcePlay);
         document.addEventListener('touchstart', forcePlay);
         document.addEventListener('scroll', forcePlay);
+        document.addEventListener('mousemove', forcePlay);
 
         document.getElementById('music-controls').addEventListener('click', function() {
             if (player) {
