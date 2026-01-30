@@ -126,6 +126,10 @@ a:hover {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
 }
 
+.nav-btn:hover i {
+    color: var(--accent-color);
+}
+
 .nav-btn.primary {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
@@ -225,6 +229,11 @@ a:hover {
     background-color: var(--bg-secondary);
     transform: translateX(3px);
     padding-left: 26px;
+}
+
+.sidebar-link:hover i {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
 }
 
 .sidebar-link:active {
@@ -352,6 +361,10 @@ p {
     padding-left: 22px;
 }
 
+.term-header:hover i {
+    color: var(--accent-color);
+}
+
 .term-index {
     font-weight: 700;
     margin-right: 8px;
@@ -466,6 +479,10 @@ p {
     background-color: var(--bg-tertiary);
     color: var(--text-primary);
     border-color: var(--text-secondary);
+}
+
+.btn-copy:hover i {
+    color: var(--accent-color);
 }
 
 /* Links List */
