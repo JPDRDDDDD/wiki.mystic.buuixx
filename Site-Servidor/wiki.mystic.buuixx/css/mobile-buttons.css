@@ -1,0 +1,51 @@
+/* Mobile FAB Styles */
+.mobile-fab {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #5865F2; /* Discord Color */
+    color: white;
+    text-align: center;
+    line-height: 56px;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.mobile-fab:hover {
+    transform: scale(1.1) rotate(5deg);
+    background-color: #4752c4;
+}
+
+.mobile-fab:active {
+    transform: scale(0.95);
+}
+
+.mobile-only-group {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-fab {
+        display: block;
+        animation: floatUp 0.5s ease-out backwards 1s;
+    }
+
+    .mobile-only-group {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+    }
+
+    .sidebar-link.external-link {
+        color: var(--accent-color);
+        font-weight: 600;
+    }
+}

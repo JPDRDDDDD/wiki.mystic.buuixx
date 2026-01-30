@@ -29,7 +29,7 @@
 
             <nav class="nav-buttons">
                 <a href="https://discord.gg/ec2KKPvpbF" target="_blank" class="nav-btn">Discord</a>
-                <a href="https://mysticonlineshop.vercel.app/" target="_blank" class="nav-btn" title="Acessar a Loja" style="padding: 8px 12px; background-color: #2b2d31; color: #b9bbbe; border: 1px solid #1e1f22; display: flex; align-items: center; justify-content: center;">
+                <a href="https://mysticonlineshop.vercel.app/" target="_blank" class="nav-btn btn-store-nav" title="Acessar a Loja">
                     <i class="fas fa-shopping-cart"></i>
                 </a>
                 <a href="https://mysticbuuixx.keepo.bio" target="_blank" class="nav-btn" title="Redes Sociais"><i class="fas fa-share-alt"></i></a>
@@ -39,6 +39,17 @@
 
     <!-- 2️⃣ MENU LATERAL (SIDEBAR) -->
     <aside class="site-sidebar">
+        <!-- MOBILE ONLY: LINKS RÁPIDOS -->
+        <div class="sidebar-group mobile-only-group">
+            <div class="sidebar-title">Acesso Rápido</div>
+            <a href="https://discord.gg/ec2KKPvpbF" target="_blank" class="sidebar-link external-link">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+            <a href="https://mysticonlineshop.vercel.app/" target="_blank" class="sidebar-link external-link">
+                <i class="fas fa-shopping-cart"></i> Loja
+            </a>
+        </div>
+
         <!-- CATEGORIA: INÍCIO -->
         <div class="sidebar-group">
             <div class="sidebar-title">Início</div>
@@ -102,7 +113,7 @@
             
             <!-- SECTION: WELCOME -->
             <section id="welcome" class="section-content">
-                <h1>Bem-vindo à Wiki da Mystic Buuixx! <i class="fas fa-star" style="color: #FFD700; font-size: 0.8em;"></i></h1>
+                <h1>Bem-vindo à Wiki da Mystic Buuixx! <i class="fas fa-star text-gold" style="font-size: 0.8em;"></i></h1>
                 
                 <p class="intro-text">
                     A Wiki da Mystic Buuixx é o guia oficial para todos os jogadores, desde iniciantes até veteranos, que querem explorar ao máximo tudo o que o servidor tem a oferecer. Vamos começar?
@@ -124,7 +135,7 @@
             <!-- SECTION: RULES -->
             <section id="rules" class="section-content hidden">
                 <div class="rules-container">
-                    <h1><i class="fas fa-shield-alt" style="color: #5865F2;"></i> Regras do Servidor</h1>
+                    <h1><i class="fas fa-shield-alt text-discord"></i> Regras do Servidor</h1>
                     <p class="subtitle">Siga as diretrizes para uma boa convivência na comunidade.</p>
                     
                     <div class="rules-box">
@@ -799,7 +810,13 @@
         });
     </script>
 
-    <script src="js/script.js"></script>
     <div class="sidebar-overlay"></div>
+
+    <!-- MOBILE FAB (Floating Action Button) - DISCORD -->
+    <a href="https://discord.gg/ec2KKPvpbF" target="_blank" class="mobile-fab discord-fab" title="Entrar no Discord">
+        <i class="fab fa-discord"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
