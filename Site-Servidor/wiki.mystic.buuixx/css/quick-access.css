@@ -1,0 +1,24 @@
+
+/* Quick Access Links Customization */
+.sidebar-link.external-link {
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.sidebar-link.external-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.sidebar-link.external-link .fa-discord {
+    color: #5865F2; /* Discord Brand Color */
+}
+
+.sidebar-link.external-link .fa-shopping-cart {
+    color: #FFD700; /* Gold for Store */
+}
+
+/* Ensure spacing in the quick access group */
+.sidebar-group:first-of-type .sidebar-link {
+    margin-bottom: 4px;
+}
