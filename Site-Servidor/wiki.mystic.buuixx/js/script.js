@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sidebar Links Click
     sidebarLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+            if (link.classList.contains('external-link')) return; // Allow default behavior for external links
             e.preventDefault();
             const target = link.dataset.target;
             const title = link.textContent.trim();
@@ -173,6 +174,16 @@ document.addEventListener('DOMContentLoaded', () => {
             searchInput.focus();
         }
     });
+
+    // Search Icon Click (Mobile & Desktop)
+    const searchContainer = document.querySelector('.search-container');
+    if (searchContainer && searchInput) {
+        searchContainer.addEventListener('click', (e) => {
+            // Prevent recursive focus loop if input itself is clicked
+            if (e.target === searchInput) return;
+            searchInput.focus();
+        });
+    }
 
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {

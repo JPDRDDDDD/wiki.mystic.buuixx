@@ -894,7 +894,11 @@ p {
         font-size: 1.1rem;
         left: 50%;
         transform: translate(-50%, -50%);
-        pointer-events: none;
+        pointer-events: none; /* Let clicks pass to the container/input */
+    }
+    
+    .search-container {
+        cursor: pointer; /* Indicate it's clickable */
     }
     
     .shortcut-key {
